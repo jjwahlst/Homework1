@@ -1,7 +1,5 @@
 # Auto detect text files and perform LF normalization
 * text=auto
-# hello is this working
-# yes it is
 
 from scipy.optimize import minimize
 
