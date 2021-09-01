@@ -1,6 +1,4 @@
-# Auto detect text files and perform LF normalization
-* text=auto
-
+# what is going on
 
 import numpy as np
 
@@ -12,5 +10,3 @@ cons = ({'type' : 'eq', 'fun': lambda x: x[0] +3*x[1]},
         'type' : 'eq', 'fun': lambda x: x[1] - x[4]} )
 bnds = ((-10,10),(-10,10),(-10,10),(-10,10),(-10,10))
 res = minimize(fun, (1,2,3,4,5,6), method='SLSQP',bounds=bnds, constraints=cons
-
-res
