@@ -8,3 +8,4 @@ cons = ({'type': 'eq', 'fun': lambda x: x[0] + 3*x[1]},
 bnds = ((-10, 10), (-10, 10), (-10, 10), (-10, 10), (-10, 10))
 x0 = np.array([1, 3, 4, 5, 6])
 res = minimize(fun, x0, method='SLSQP', bounds=bnds, constraints=cons)
+print(res.x)
